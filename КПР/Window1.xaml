@@ -1,0 +1,28 @@
+﻿<Window x:Class="КПР.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:КПР"
+        mc:Ignorable="d"
+        Title="Главное окно" Height="326" Width="455">
+    <Grid Margin="0,0,2,0">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF170420" Offset="0"/>
+                <GradientStop Color="#FF16061E" Offset="0.711"/>
+                <GradientStop Color="#FF15071D" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Клиенты" HorizontalAlignment="Left" Margin="35,71,0,0" VerticalAlignment="Top" Width="157" Height="35" Background="#FFA481BB" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16" Click="Button_Click"/>
+        <Button Content="Оформить договр" HorizontalAlignment="Left" Margin="253,71,0,0" VerticalAlignment="Top" Width="148" Height="88" RenderTransformOrigin="0.404,0.398" Background="#FFA481BB" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <Button Content="Мои данные" HorizontalAlignment="Left" Margin="35,233,0,0" VerticalAlignment="Top" Width="157" Height="35" Background="#FFA481BB" FontFamily="Yu Gothic UI Semibold" FontSize="16" FontWeight="Bold"/>
+        <Button Content="Договоры" HorizontalAlignment="Left" Margin="35,179,0,0" VerticalAlignment="Top" Width="157" Height="35" Background="#FFA481BB" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16"/>
+        <Button Content="Недвижимости" HorizontalAlignment="Left" Margin="35,124,0,0" VerticalAlignment="Top" Width="157" Height="35" Background="#FFA481BB" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16"/>
+
+    </Grid>
+</Window>

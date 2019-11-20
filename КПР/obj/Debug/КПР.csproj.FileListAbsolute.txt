@@ -1,0 +1,72 @@
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\bin\Debug\КПР.exe.config
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\bin\Debug\КПР.exe
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\bin\Debug\КПР.pdb
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\КПР.csprojAssemblyReference.cache
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\MainWindow.g.cs
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\Window1.g.cs
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\App.g.cs
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\КПР_MarkupCompile.cache
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\КПР_MarkupCompile.lref
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\MainWindow.baml
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\Window1.baml
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\КПР.g.resources
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\КПР.Properties.Resources.resources
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\КПР.csproj.GenerateResource.cache
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\КПР.csproj.CoreCompileInputs.cache
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\КПР.exe
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\КПР.pdb
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\bin\Debug\EntityFramework.dll
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\bin\Debug\EntityFramework.SqlServer.dll
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\bin\Debug\EntityFramework.xml
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\bin\Debug\EntityFramework.SqlServer.xml
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\КПР.csproj.CopyComplete
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\Window2.g.cs
+D:\ISPU\КОНСТРУИРОВАНИЕ ПО\КПР\КПР\obj\Debug\Window2.baml
+G:\КПР\КПР\bin\Debug\КПР.exe.config
+G:\КПР\КПР\bin\Debug\КПР.exe
+G:\КПР\КПР\bin\Debug\КПР.pdb
+G:\КПР\КПР\bin\Debug\EntityFramework.dll
+G:\КПР\КПР\bin\Debug\EntityFramework.SqlServer.dll
+G:\КПР\КПР\bin\Debug\EntityFramework.xml
+G:\КПР\КПР\bin\Debug\EntityFramework.SqlServer.xml
+G:\КПР\КПР\obj\Debug\КПР.csprojAssemblyReference.cache
+G:\КПР\КПР\obj\Debug\MainWindow.g.cs
+G:\КПР\КПР\obj\Debug\Window1.g.cs
+G:\КПР\КПР\obj\Debug\Window2.g.cs
+G:\КПР\КПР\obj\Debug\App.g.cs
+G:\КПР\КПР\obj\Debug\КПР_MarkupCompile.cache
+G:\КПР\КПР\obj\Debug\КПР_MarkupCompile.lref
+G:\КПР\КПР\obj\Debug\MainWindow.baml
+G:\КПР\КПР\obj\Debug\Window1.baml
+G:\КПР\КПР\obj\Debug\Window2.baml
+G:\КПР\КПР\obj\Debug\КПР.g.resources
+G:\КПР\КПР\obj\Debug\КПР.Properties.Resources.resources
+G:\КПР\КПР\obj\Debug\КПР.csproj.GenerateResource.cache
+G:\КПР\КПР\obj\Debug\КПР.csproj.CoreCompileInputs.cache
+G:\КПР\КПР\obj\Debug\КПР.csproj.CopyComplete
+G:\КПР\КПР\obj\Debug\КПР.exe
+G:\КПР\КПР\obj\Debug\КПР.pdb
+C:\Users\Валентина\Desktop\КПР\КПР\bin\Debug\КПР.exe.config
+C:\Users\Валентина\Desktop\КПР\КПР\bin\Debug\КПР.exe
+C:\Users\Валентина\Desktop\КПР\КПР\bin\Debug\КПР.pdb
+C:\Users\Валентина\Desktop\КПР\КПР\bin\Debug\EntityFramework.dll
+C:\Users\Валентина\Desktop\КПР\КПР\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Валентина\Desktop\КПР\КПР\bin\Debug\EntityFramework.xml
+C:\Users\Валентина\Desktop\КПР\КПР\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\КПР.csprojAssemblyReference.cache
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\MainWindow.g.cs
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\Window1.g.cs
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\Window2.g.cs
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\App.g.cs
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\КПР_MarkupCompile.cache
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\КПР_MarkupCompile.lref
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\MainWindow.baml
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\Window1.baml
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\Window2.baml
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\КПР.g.resources
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\КПР.Properties.Resources.resources
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\КПР.csproj.GenerateResource.cache
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\КПР.csproj.CoreCompileInputs.cache
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\КПР.csproj.CopyComplete
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\КПР.exe
+C:\Users\Валентина\Desktop\КПР\КПР\obj\Debug\КПР.pdb
