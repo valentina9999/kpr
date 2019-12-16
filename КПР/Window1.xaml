@@ -5,24 +5,70 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:КПР"
         mc:Ignorable="d"
-        Title="Главное окно" Height="326" Width="455">
-    <Grid Margin="0,0,2,0">
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FF170420" Offset="0"/>
-                <GradientStop Color="#FF16061E" Offset="0.711"/>
-                <GradientStop Color="#FF15071D" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
+        Title="Главное окно" Height="306" Width="625">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45px"></RowDefinition>
+            <!--<RowDefinition></RowDefinition>-->
+            <!--<RowDefinition></RowDefinition>-->
+            <RowDefinition Height="188*"></RowDefinition>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="75*"></ColumnDefinition>
+            <ColumnDefinition Width="121*"></ColumnDefinition>
+            <ColumnDefinition Width="95*"></ColumnDefinition>
+            <ColumnDefinition Width="155*"></ColumnDefinition>
+            <ColumnDefinition Width="115*"></ColumnDefinition>
+
         </Grid.ColumnDefinitions>
-        <Button Content="Клиенты" HorizontalAlignment="Left" Margin="35,71,0,0" VerticalAlignment="Top" Width="157" Height="35" Background="#FFA481BB" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16" Click="Button_Click"/>
-        <Button Content="Оформить договр" HorizontalAlignment="Left" Margin="253,71,0,0" VerticalAlignment="Top" Width="148" Height="88" RenderTransformOrigin="0.404,0.398" Background="#FFA481BB" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
-        <Button Content="Мои данные" HorizontalAlignment="Left" Margin="35,233,0,0" VerticalAlignment="Top" Width="157" Height="35" Background="#FFA481BB" FontFamily="Yu Gothic UI Semibold" FontSize="16" FontWeight="Bold"/>
-        <Button Content="Договоры" HorizontalAlignment="Left" Margin="35,179,0,0" VerticalAlignment="Top" Width="157" Height="35" Background="#FFA481BB" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16"/>
-        <Button Content="Недвижимости" HorizontalAlignment="Left" Margin="35,124,0,0" VerticalAlignment="Top" Width="157" Height="35" Background="#FFA481BB" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16"/>
+        <Button Click="Button_Click" Grid.Column="0" Grid.Row="0" Content="Клиенты" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFA481BB" Offset="1"/>
+                    <GradientStop Color="#FF7B43B4" Offset="0.072"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Column="3" Grid.Row="0" Content="Оформить договор" FontFamily="Yu Gothic UI Semibold" FontSize="16" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFA481BB" Offset="1"/>
+                    <GradientStop Color="#FF7B43B4" Offset="0.072"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Button Grid.Column="4" Grid.Row="0" Content="Мои данные" FontFamily="Yu Gothic UI Semibold" FontSize="16" FontWeight="Bold" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFA481BB" Offset="1"/>
+                    <GradientStop Color="#FF7B43B4" Offset="0.072"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Column="2" Grid.Row="0" Content="Договоры" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16" Click="Button_Click_3" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFA481BB" Offset="1"/>
+                    <GradientStop Color="#FF7B43B4" Offset="0.072"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Column="1" Grid.Row="0" Content="Недвижимости" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16" Click="Button_Click_1" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFA481BB" Offset="1"/>
+                    <GradientStop Color="#FF7B43B4" Offset="0.072"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Frame Margin="0 10 0 0" x:Name="Clients" Source="Page1.xaml" NavigationUIVisibility="Hidden" Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="5" />
 
     </Grid>
 </Window>
