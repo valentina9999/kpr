@@ -21,12 +21,14 @@ namespace КПР
     public partial class Page3 : Page
     {
         Model1 db;
-        public Page3()
+        int userId;
+        public Page3(int user_id)
         {
             db = new Model1();
+            userId = user_id;
             InitializeComponent();
-            this.DataContext = new AppViewModel();
-            List<AdDetails> addetails = db.AdDetails.ToList();
+            this.DataContext = new AppViewModel(user_id);
+            List<AdDetails> addetails = db.AdDetails.Where(ad => ad.Client.ID_user_FK == userId).ToList();
             // MessageBox.Show(clients.Count().ToString());
             dataGrid3.ItemsSource = addetails;
         }

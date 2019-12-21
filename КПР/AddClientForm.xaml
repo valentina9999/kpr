@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:КПР"
         mc:Ignorable="d"
-        Title="AddClientForm" Height="369" Width="420.9">
+        Title="Информационная система агентства недвижимости"  ResizeMode="NoResize" Height="369" Width="420.9" Icon="pack://siteoforigin:,,,/icon2.ico">
     <Grid Background="#FF14061B">
-        <TextBox Name="txtPhones"  HorizontalAlignment="Left" Height="33" Margin="109,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192" Background="#FFA481BB"/>
-        <TextBox Name="txtPas" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192" Margin="109,115,0,0" Background="#FFA481BB"/>
-        <TextBox Name="txtFIO" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192" Margin="109,165,0,0" Background="#FFA481BB"/>
-        <TextBox Name="txtAdd" HorizontalAlignment="Left" Height="33" Margin="109,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192" Background="#FFA481BB"/>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="142,263,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="Button_Click">
+        <TextBox Text="{Binding phone}" Name="txtPhones"  HorizontalAlignment="Left" Height="33" Margin="109,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Background="#FFA481BB"/>
+        <TextBox Text="{Binding pas}" Name="txtPas" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Margin="109,115,0,0" Background="#FFA481BB"/>
+        <TextBox Text="{Binding FIO}" Name="txtFIO" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Margin="109,165,0,0" Background="#FFA481BB"/>
+        <TextBox Text="{Binding address}" Name="txtAdd" HorizontalAlignment="Left" Height="33" Margin="109,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Background="#FFA481BB"/>
+        <Button Command="{Binding InsertCommand}" Content="Добавить" IsDefault="True" HorizontalAlignment="Left" Margin="142,263,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="Button_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF130C1B"/>
@@ -19,7 +19,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label x:Name="label" Content="Контакты" HorizontalAlignment="Left" Margin="28,68,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontStyle="Italic" FontWeight="Bold" Foreground="#FFA481BB" Height="33" FontSize="16"/>
+        <Label x:Name="label"  Content="Контакты" HorizontalAlignment="Left" Margin="28,68,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontStyle="Italic" FontWeight="Bold" Foreground="#FFA481BB" Height="33" FontSize="16"/>
         <Label x:Name="label1" Content="Паспорт" HorizontalAlignment="Left" Margin="28,115,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontStyle="Italic" FontWeight="Bold" Foreground="#FFA481BB" FontSize="16"/>
         <Label x:Name="label2" Content="ФИО" HorizontalAlignment="Left" Margin="41,165,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontStyle="Italic" FontWeight="Bold" Foreground="#FFA481BB" FontSize="16"/>
         <Label x:Name="label3" Content="Адрес" HorizontalAlignment="Left" Margin="32,212,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontStyle="Italic" FontWeight="Bold" Foreground="#FFA481BB" FontSize="16"/>

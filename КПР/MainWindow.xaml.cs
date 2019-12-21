@@ -34,10 +34,10 @@ namespace КПР
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Model1 db = new Model1();
-            var request = db.User.ToList().Where(i => i.Login == txtLogin.Text && i.Password == txtPassword.Password).Count();
-            if (request == 1)
+            List<User> request = db.User.Where(i => i.Login == txtLogin.Text && i.Password == txtPassword.Password).ToList();
+            if (request.Count == 1)
             {
-                Window1 mainWindow = new Window1();
+                Window1 mainWindow = new Window1(request[0].ID_user);
                 mainWindow.Show();
                 this.Close();
             }

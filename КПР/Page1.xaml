@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:КПР"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
@@ -17,10 +18,34 @@
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="188*"></RowDefinition>
         </Grid.RowDefinitions>
-        <DataGrid Name="dataGrid1" CanUserAddRows="False" Grid.Row="1" Grid.ColumnSpan="3" SelectionChanged="dataGrid1_SelectionChanged" Background="#FF14061B" />
-        <ComboBox Name="phoneList"  Grid.Column="0" Grid.Row="0" BorderBrush="#FF7C2385"  Background="#FFA481BB" >
-            <TextBlock Grid.Row="0" >Все клиенты</TextBlock>
-            <TextBlock Grid.Row="0">Мои клиенты</TextBlock>
+        <DataGrid ItemsSource="{Binding Client}" Name="dataGrid1" CanUserAddRows="False" Grid.Row="1" Grid.ColumnSpan="2" SelectionChanged="dataGrid1_SelectionChanged" AutoGenerateColumns="False" HorizontalGridLinesBrush="DarkGray"
+    RowBackground="LightGray" AlternatingRowBackground="White">
+            <DataGrid.Background>
+                <ImageBrush ImageSource="C:\Users\Валентина\source\repos\git_kpr\КПР\new.jpg" />
+            </DataGrid.Background>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер" Binding="{Binding Path=ID_client}" Width="50"  />
+                <DataGridTextColumn Header="ФИО" Binding="{Binding Path=FIO}" Width="250" />
+                <DataGridTextColumn Header="Контакты" Binding="{Binding Path=Phones}" Width="90" />
+                <DataGridTextColumn Header="Паспорт" Binding="{Binding Path=Passport}" Width="80" />
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Path=Address}" Width="200" />
+                <DataGridTextColumn Header="Агент" Binding="{Binding Path=ID_user_FK}" Width="50" />
+            </DataGrid.Columns>
+        </DataGrid>
+            <!--<TextBlock Grid.Row="0" >Все клиенты</TextBlock>
+            <TextBlock Grid.Row="0">Мои клиенты</TextBlock>-->
+        <ComboBox Name="comboBoxAllOrById" SelectedItem="{Binding CBValue}" ItemsSource="{Binding CBvalues}" Grid.Column="0" Grid.Row="0" BorderBrush="#FF7C2385"  Background="#FFA481BB" >
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel
+                        Orientation="Horizontal">
+                        <TextBlock 
+                            FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16"
+                            Text="{Binding}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+
+            </ComboBox.ItemTemplate>
         </ComboBox>
         <Button Click="Button_Click" Grid.Column="1" Grid.Row="0" Content="Добавить клиента" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16" Height="50" VerticalAlignment="Top" >
             <Button.Background>

@@ -108,3 +108,7 @@ C:\Users\Валентина\source\repos\git_kpr\КПР\obj\Debug\Page3.g.cs
 C:\Users\Валентина\source\repos\git_kpr\КПР\obj\Debug\Page1.baml
 C:\Users\Валентина\source\repos\git_kpr\КПР\obj\Debug\Page2.baml
 C:\Users\Валентина\source\repos\git_kpr\КПР\obj\Debug\Page3.baml
+C:\Users\Валентина\source\repos\git_kpr\КПР\obj\Debug\MyData.g.cs
+C:\Users\Валентина\source\repos\git_kpr\КПР\obj\Debug\MyData.baml
+C:\Users\Валентина\source\repos\git_kpr\КПР\obj\Debug\AddAdDetails.g.cs
+C:\Users\Валентина\source\repos\git_kpr\КПР\obj\Debug\AddAdDetails.baml

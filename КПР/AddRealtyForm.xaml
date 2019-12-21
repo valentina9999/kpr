@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:КПР"
         mc:Ignorable="d"
-        Title="AddRealtyForm" Height="495" Width="411.5">
+        Title="Информационная система агентства недвижимости"  ResizeMode="NoResize" Height="495" Width="411.5" Icon="pack://siteoforigin:,,,/icon2.ico">
     <Grid>
         <Grid Background="#FF14061B">
-            <TextBox Name="txtPhones"  HorizontalAlignment="Left" Height="33" Margin="109,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192" Background="#FFA481BB"/>
-            <TextBox Name="txtPas" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192" Margin="109,115,0,0" Background="#FFA481BB"/>
-            <TextBox Name="txtFIO" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192" Margin="109,165,0,0" Background="#FFA481BB"/>
+            <TextBox Name="txtAd"  HorizontalAlignment="Left" Height="33" Margin="109,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192" Background="#FFA481BB"/>
+            <TextBox Name="txtPrice" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192" Margin="109,115,0,0" Background="#FFA481BB"/>
+            <TextBox Name="txtSpace" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192" Margin="109,165,0,0" Background="#FFA481BB"/>
             <Button Content="Добавить" HorizontalAlignment="Left" Margin="152,394,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="Button_Click1">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -26,16 +26,16 @@
             <Label x:Name="label4" Content="Введите данные недвижимости:" HorizontalAlignment="Left" Margin="80,32,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontStyle="Italic" FontWeight="Bold" Foreground="#FFA481BB" FontSize="16"/>
             <Label x:Name="label3_Copy" Content="Статус" HorizontalAlignment="Left" Margin="24,275,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontStyle="Italic" FontWeight="Bold" Foreground="#FFA481BB" FontSize="16" Height="32"/>
             <Label x:Name="label3_Copy1" Content="Продавец" HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontStyle="Italic" FontWeight="Bold" Foreground="#FFA481BB" FontSize="16"/>
-            <ComboBox HorizontalAlignment="Left" Margin="109,217,0,0" VerticalAlignment="Top" Width="192" Height="33" SelectionChanged="ComboBox_SelectionChanged">
-                <ComboBox.Background>
+            <ComboBox Name="Type" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="109,217,0,0" VerticalAlignment="Top" Width="192" Height="33" SelectionChanged="ComboBox_SelectionChanged" >
+                <!--<ComboBox.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFF0F0F0" Offset="0"/>
                         <GradientStop Color="#FFA481BB" Offset="1"/>
                     </LinearGradientBrush>
-                </ComboBox.Background>
+                </ComboBox.Background>-->
             </ComboBox>
-            <ComboBox HorizontalAlignment="Left" Margin="109,274,0,0" VerticalAlignment="Top" Width="192" Height="33" SelectionChanged="ComboBox_SelectionChanged_1"/>
-            <ComboBox HorizontalAlignment="Left" Margin="109,331,0,0" VerticalAlignment="Top" Width="192" Height="33" SelectionChanged="ComboBox_SelectionChanged_2"/>
+            <ComboBox Name="Status" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="109,274,0,0" VerticalAlignment="Top" Width="192" Height="33" SelectionChanged="ComboBox_SelectionChanged_1"/>
+            <ComboBox Name="Prod" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="109,331,0,0" VerticalAlignment="Top" Width="192" Height="33" SelectionChanged="ComboBox_SelectionChanged_2"/>
         </Grid>
     </Grid>
 </Window>

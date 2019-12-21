@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:КПР"
         mc:Ignorable="d"
-        Title="Идентификация" Height="278.268" Width="236.433" Background="#FF14061B">
+        Title="ИСАН"  ResizeMode="NoResize" Height="278.268" Width="236.433" Background="#FF14061B" Icon="pack://siteoforigin:,,,/icon2.ico">
     <Grid Margin="0,0,311,-63">
         <TextBox Name="txtLogin" Height="29" Margin="47,45,-177,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" RenderTransformOrigin="1,0.5" Background="#FFA481BB" TextChanged="TextBox_TextChanged" FontStyle="Italic"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="99,150,-99,0" VerticalAlignment="Top" Width="0"/>

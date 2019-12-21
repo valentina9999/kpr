@@ -1,0 +1,24 @@
+﻿<Window x:Class="КПР.MyData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:КПР"
+        mc:Ignorable="d"
+        Title="Информационная система агентства недвижимости" ResizeMode="NoResize" Height="327.5" Width="453" Icon="pack://siteoforigin:,,,/icon2.ico">
+
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Валентина\source\repos\git_kpr\КПР\fonMyData.jpg" Opacity="0.5"/>
+        </Grid.Background>
+        <Label Content="Договоров оформлено:"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="236" Margin="10,101,0,0" FontFamily="Yu Gothic UI Semibold" FontStyle="Italic" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Выручка с договоров:"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="236" Margin="10,144,0,0" FontFamily="Yu Gothic UI Semibold" FontStyle="Italic" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Логин:"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="236" Margin="10,189,0,0" FontFamily="Yu Gothic UI Semibold" FontStyle="Italic" FontWeight="Bold" FontSize="20"/>
+        <Label Content="ФИО:"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="236" Margin="10,56,0,0" FontFamily="Yu Gothic UI Semibold" FontStyle="Italic" FontWeight="Bold" FontSize="20"/>
+        <TextBox Text="{Binding FIO}" Name="FIO" HorizontalAlignment="Left" Height="45" Margin="75,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Background="{x:Null}"/>
+        <TextBox Text="{Binding AdDetailCount}" Name="CountAd" HorizontalAlignment="Left" Height="45" Margin="246,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Background="{x:Null}"/>
+        <TextBox Text="{Binding totalMoney}" Name="Revenue" HorizontalAlignment="Left" Height="45" Margin="231,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Background="{x:Null}"/>
+        <TextBox Text="{Binding Login}" Name="Login" HorizontalAlignment="Left" Height="45" Margin="87,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Background="{x:Null}"/>
+    </Grid>
+</Window>

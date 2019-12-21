@@ -19,7 +19,7 @@ namespace КПР
     /// </summary>
     public partial class ClientsForm : Window
     {
-        public ClientsForm()
+        public ClientsForm(/*int type_realty*/)
         {
             InitializeComponent();
         }

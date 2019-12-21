@@ -13,7 +13,19 @@
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="188*"></RowDefinition>
         </Grid.RowDefinitions>
-        <DataGrid Name="dataGrid3" CanUserAddRows="False" Grid.Row="1" Grid.ColumnSpan="1" SelectionChanged="dataGrid3_SelectionChanged" Background="#FF14061B"/>
+        <DataGrid Name="dataGrid3" CanUserAddRows="False" Grid.Row="1" Grid.ColumnSpan="1" SelectionChanged="dataGrid3_SelectionChanged" AutoGenerateColumns="False" HorizontalGridLinesBrush="DarkGray"
+    RowBackground="LightGray" AlternatingRowBackground="White">
+            <DataGrid.Background>
+                <ImageBrush  ImageSource="C:\Users\Валентина\source\repos\git_kpr\КПР\new.jpg"/>
+            </DataGrid.Background>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер" Binding="{Binding Path=ID_adDetails}" Width="50"  />
+                <DataGridTextColumn Header="Дата создания" Binding="{Binding Path=Filing}" Width="200" />
+                <DataGridTextColumn Header="Тип" Binding="{Binding Path=ID_typeAd_FK}" Width="90" />
+                <DataGridTextColumn Header="Номер недвижимости" Binding="{Binding Path=ID_realty_FK}" Width="150" />
+                <DataGridTextColumn Header="Покупатель" Binding="{Binding Path=ID_client_FK}" Width="200" />
+            </DataGrid.Columns>
+        </DataGrid>
         <Label Content="Мои договоры" Grid.Row="0" FontFamily="Yu Gothic UI Semibold" Foreground="#FFA481BB"  HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="22"/>
 
     </Grid>

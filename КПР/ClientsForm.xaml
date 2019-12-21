@@ -5,22 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:КПР"
         mc:Ignorable="d"
-        Title="ClientsForm" Height="450" Width="800">
+        Title="Информационная система агентства недвижимости" Height="301.5" Width="507.5" Icon="pack://siteoforigin:,,,/icon2.ico">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="143*"></ColumnDefinition>
-            <ColumnDefinition Width="206*"></ColumnDefinition>
-            <ColumnDefinition Width="222*"></ColumnDefinition>
-            <ColumnDefinition Width="221*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="188*"></RowDefinition>
         </Grid.RowDefinitions>
-        <ComboBox Name="phonesList"  Grid.Column="0" Grid.Row="0" BorderBrush="#FF7C2385"  Background="#FFA481BB" >
-            <TextBlock>Недвижимости</TextBlock>
-            <TextBlock>Договоры</TextBlock>
-        </ComboBox>
         <Button Grid.Column="1" Grid.Row="0" Content="Изменить данные" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16" Height="50" VerticalAlignment="Top" >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -30,24 +23,10 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Click="Button_Click" Grid.Column="2" Grid.Row="0" Content="Добавить недвижимость" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16" Height="50" VerticalAlignment="Top" >
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FFA481BB" Offset="1"/>
-                    <GradientStop Color="#FF7B43B4" Offset="0.072"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Grid.Column="3" Grid.Row="0" Content="Добавить договор" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16" Height="50" VerticalAlignment="Top" >
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FFA481BB" Offset="1"/>
-                    <GradientStop Color="#FF7B43B4" Offset="0.072"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <DataGrid Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="380"  Grid.Row="1" VerticalAlignment="Top" Width="772" Background="#FF14061B"/>
+        <DataGrid Grid.ColumnSpan="2"   Grid.Row="1" >
+            <DataGrid.Background>
+                <ImageBrush ImageSource="C:\Users\Валентина\source\repos\git_kpr\КПР\fon.jpg"/>
+            </DataGrid.Background>
+        </DataGrid>
     </Grid>
 </Window>

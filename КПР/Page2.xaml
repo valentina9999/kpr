@@ -16,7 +16,21 @@
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="188*"></RowDefinition>
         </Grid.RowDefinitions>
-        <DataGrid Name="dataGrid2" CanUserAddRows="False" Grid.Row="1" Grid.ColumnSpan="1" SelectionChanged="dataGrid2_SelectionChanged" Background="#FF14061B" />
+        <DataGrid Name="dataGrid2" CanUserAddRows="False" Grid.Row="1" Grid.ColumnSpan="1" SelectionChanged="dataGrid2_SelectionChanged" AutoGenerateColumns="False" HorizontalGridLinesBrush="DarkGray"
+    RowBackground="LightGray" AlternatingRowBackground="White" >
+             <DataGrid.Background>
+                <ImageBrush  ImageSource="C:\Users\Валентина\source\repos\git_kpr\КПР\new.jpg"/>
+            </DataGrid.Background>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер" Binding="{Binding Path=ID_realty}" Width="50" />
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Path=Address}" Width="200" />
+                <DataGridTextColumn Header="Цена" Binding="{Binding Path=Price}" Width="150" />
+                <DataGridTextColumn Header="Площадь" Binding="{Binding Path=Space}" Width="100" />
+                <DataGridTextColumn Header="Тип" Binding="{Binding Path=ID_TypeRealty_FK}" Width="150" />
+                <DataGridTextColumn Header="Статус" Binding="{Binding Path=ID_StatusRealty_FK}" Width="150" />
+                <DataGridTextColumn Header="Продавец" Binding="{Binding Path=ID_client_FK}" Width="250" />
+             </DataGrid.Columns>
+        </DataGrid>
         <Button Click="Button_Click1" Grid.Column="1" Grid.Row="0" Content="Добавить недвижимость" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="16" >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

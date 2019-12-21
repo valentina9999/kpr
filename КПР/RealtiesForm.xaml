@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:КПР"
         mc:Ignorable="d"
-        Title="RealtiesForm" Height="435" Width="641">
-    <Grid Background="#FF14061B" Margin="0,0,10,10">
+        Title="Информационная система агентства недвижимости" Height="535.5" Width="735.5" Icon="pack://siteoforigin:,,,/icon2.ico">
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="37*"/>
             <RowDefinition Height="199*"/>
         </Grid.RowDefinitions>
-        <Button Content="Сгенерировать договор" HorizontalAlignment="Left" Grid.ColumnSpan="1" Width="624" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" Grid.Row="0" FontSize="22" >
+        <Button Content="Сгенерировать договор" Grid.ColumnSpan="1" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" Grid.Row="0" FontSize="22" Click="Button_Click" >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -19,6 +19,11 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <DataGrid Grid.Row="1" Grid.ColumnSpan="1" HorizontalAlignment="Left" Height="388" VerticalAlignment="Top" Width="624" SelectionChanged="DataGrid_SelectionChanged"/>
+        <DataGrid Name="DataGrid4" Grid.Row="1" Grid.ColumnSpan="1"  SelectionChanged="DataGrid_SelectionChanged">
+            <DataGrid.Background>
+                <ImageBrush ImageSource="C:\Users\Валентина\source\repos\git_kpr\КПР\fon.jpg"/>
+            </DataGrid.Background>
+        </DataGrid>
+
     </Grid>
 </Window>
